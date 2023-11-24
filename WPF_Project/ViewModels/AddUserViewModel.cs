@@ -17,6 +17,10 @@ namespace WPF_Project.ViewModels
         public string? Name { get; set; }
         public string? Email { get; set; }
 
+        public string? Sex { get; set; }
+
+        public string? Age { get; set; }
+
         public AddUserViewModel()
         {
             AddUserCommand = new RelayCommand(AddUser, CanAddUser);
@@ -31,7 +35,7 @@ namespace WPF_Project.ViewModels
         private void AddUser(object obj)
         {
 
-            UserManager.AddUser(new User() { Name = Name, Email = Email });
+            UserManager.AddUser(new User() { Name = Name, Email = Email, Sex = Sex, Age = Age });
 
         }
     }

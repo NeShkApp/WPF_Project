@@ -5,17 +5,73 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Project.Views"
         mc:Ignorable="d"
-        Title="AddUser" Height="450" Width="400">
+        Title="AddUser" Height="625" Width="400">
     <Grid>
 
-        <Label Content="Name" Margin="25" VerticalAlignment="Top" HorizontalAlignment="left"/>
-        <TextBox  Height="30" Text="{Binding Name}" Width="200" Margin="25,50" VerticalAlignment="Top" HorizontalAlignment="left" BorderThickness="1" BorderBrush="#E0E0E0" />
+        <Label Content="Name" 
+			   Margin="25" 
+			   VerticalAlignment="Top" 
+			   HorizontalAlignment="left"/>
+        <TextBox  Height="30" 
+				  Text="{Binding Name}" 
+				  Width="200" 
+				  Margin="25,50" 
+				  VerticalAlignment="Top" 
+				  HorizontalAlignment="left" 
+				  BorderThickness="1" 
+				  BorderBrush="#E0E0E0" />
 
-        <Label Content="Email" Margin="25,100" VerticalAlignment="Top" HorizontalAlignment="left"/>
-        <TextBox  Height="30" Width="200" Text="{Binding Email}" Margin="25,125" VerticalAlignment="Top" HorizontalAlignment="left" BorderThickness="1" BorderBrush="#E0E0E0" />
+        <Label Content="Email"
+			   Margin="25,100" 
+			   VerticalAlignment="Top" 
+			   HorizontalAlignment="left"/>
+        <TextBox  Height="30" 
+				  Width="200" 
+				  Text="{Binding Email}" 
+				  Margin="25,125" 
+				  VerticalAlignment="Top" 
+				  HorizontalAlignment="left" 
+				  BorderThickness="1" 
+				  BorderBrush="#E0E0E0" />
+
+		<Label Content="Sex" 
+			   Margin="25,175" 
+			   VerticalAlignment="Top" 
+			   HorizontalAlignment="Left"/>
+		<TextBox  Height="30" 
+				  Width="200" 
+				  Text="{Binding Sex}" 
+				  Margin="25,200" 
+				  VerticalAlignment="Top" 
+				  HorizontalAlignment="left" 
+				  BorderThickness="1" 
+				  BorderBrush="#E0E0E0" />
+
+        <Label Content="Age" 
+				   Margin="25,250" 
+				   VerticalAlignment="Top" 
+				   HorizontalAlignment="Left"/>
+        <TextBox  Height="30" 
+				  Width="200" 
+				  Text="{Binding Age}" 
+				  Margin="25,275" 
+				  VerticalAlignment="Top" 
+				  HorizontalAlignment="left" 
+				  BorderThickness="1" 
+				  BorderBrush="#E0E0E0" />
 
 
-        <Button Height="30" Command="{Binding AddUserCommand}" Content="Add" Width="70"  VerticalContentAlignment="Center" Padding="5" Margin="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" BorderThickness="1" BorderBrush="#E0E0E0" />
+        <Button Height="30" 
+				Command="{Binding AddUserCommand}" 
+				Content="Add" 
+				Width="70"  
+				VerticalContentAlignment="Center" 
+				Padding="5" 
+				Margin="25" 
+				VerticalAlignment="Bottom" 
+				HorizontalAlignment="Center" 
+				BorderThickness="1" 
+				BorderBrush="#E0E0E0" />
 
     </Grid>
 </Window>

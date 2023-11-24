@@ -5,24 +5,37 @@
              StartupUri="Views/Main.xaml">
     <Application.Resources>
         <Style TargetType="{x:Type ListViewItem}">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="Height" Value="35"/>
-            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" 
+                    Value="Black"/>
+            <Setter Property="Height" 
+                    Value="35"/>
+            <Setter Property="FontSize" 
+                    Value="12"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type ListViewItem}">
-                        <Border Name="back" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                        <Border Name="back" 
+                                Padding="{TemplateBinding Padding}" 
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                SnapsToDevicePixels="true">
                             <GridViewRowPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                       SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
                         </Border>
 
                         <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" TargetName="back"  Value="#F5F5F5"/>
+                            <Trigger Property="IsMouseOver" 
+                                     Value="True">
+                                <Setter Property="Background" 
+                                        TargetName="back"  
+                                        Value="#F5F5F5"/>
                             </Trigger>
-                            <Trigger Property="IsSelected" Value="True">
-                                <Setter Property="Background" TargetName="back"  Value="#F5F5F5"/>
+                            <Trigger Property="IsSelected" 
+                                     Value="True">
+                                <Setter Property="Background" 
+                                        TargetName="back"  Value="#F5F5F5"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
 
@@ -42,7 +55,7 @@
                     <ControlTemplate TargetType="{x:Type Button}">
 
 
-                        <Border Name="back" CornerRadius="5" Padding="{TemplateBinding Padding}" Background="#212143" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                        <Border Name="back" CornerRadius="5" Padding="{TemplateBinding Padding}" Background="Indigo" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width ="20"/>
